@@ -61,6 +61,12 @@ public class LoadToast {
         mView.setText(mText);
         return this;
     }
+    
+    public LoadToast setText(@StringRes int resId){
+        mText = mView.getResources().getText(resId);
+        mView.setText(mText);
+        return this;
+    }
 
     public LoadToast setTextColor(int color){
         mView.setTextColor(color);
